@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "62e8db7e-b247-47a7-ae0a-c647f917a061",
+		"name": "aethergames",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dice-eth.herokuapp.com/",
+					"protocol": "https",
+					"host": [
+						"dice-eth",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "placeBet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\":\"0x73e612F58362f44Bb0Af24fA074B147b30389252\",\n    \"bet\":1\n}"
+				},
+				"url": {
+					"raw": "https://dice-eth.herokuapp.com/placeBet",
+					"protocol": "https",
+					"host": [
+						"dice-eth",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"placeBet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rollDice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://dice-eth.herokuapp.com/rollDice",
+					"protocol": "https",
+					"host": [
+						"dice-eth",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"rollDice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getResult",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dice-eth.herokuapp.com/getResult",
+					"protocol": "https",
+					"host": [
+						"dice-eth",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"getResult"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
